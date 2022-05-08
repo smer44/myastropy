@@ -24,7 +24,7 @@ XXXXXXXXXX
 arr = [list(x) for x in image.split()]
 
 def pp(arr):
-    return "\n".join("".join (x if x in "0X" else "U"  for x in line) for line in arr)
+    return "\n".join("".join (x if x in "0X-S" else "U"  for x in line) for line in arr)
 
 #print(arr)
 
@@ -51,7 +51,7 @@ def flood_fill_algo(arr,x,y,free = "0"):
     xmax = len(arr)
     ymax = len(arr[0])
     farr= copy.deepcopy(arr)
-    farr[x][y] = "X"
+    farr[x][y] = "S"
     pos = [(x,y)]
     count = 0
     while pos:
