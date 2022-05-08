@@ -25,7 +25,8 @@ def update_img(frame):
     im.set_array(arr)
     return [im]
 
-anim = ani.FuncAnimation(fig, update_img, interval = 50,blit=True)
+#anim = ani.FuncAnimation(fig, update_img, interval = 50, blit=True)
+anim = ani.FuncAnimation(fig, update_img, interval = 50)
 plt.colorbar()
 plt.show()
 
