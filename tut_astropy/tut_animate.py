@@ -6,8 +6,8 @@ from astropy.io import fits
 import matplotlib.animation as ani
 
 path = "img/RS_Oph/2021-08-29/"
-path = "img/Calibration/BIAS/2021-07-28/"
-path = "img/Calibration/DARK/2021-07-28/"
+#path = "img/Calibration/BIAS/2021-07-28/"
+#path = "img/Calibration/DARK/2021-07-28/"
 files = glob.glob(path + "*.fits")# returns list of strings, in alphabetical order
 fnumber = 0
 fsize = len(files)
